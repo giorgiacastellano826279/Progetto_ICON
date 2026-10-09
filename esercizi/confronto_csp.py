@@ -1,4 +1,9 @@
+import sys
 import time
+from pathlib import Path
+
+# Aggiunge la cartella radice a sys.path per trovare i moduli di aipython
+sys.path.append(str(Path(__file__).resolve().parent.parent))
 
 from cspConsistency import Search_with_AC_from_CSP
 from cspExamples import csp1, csp2

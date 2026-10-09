@@ -1,3 +1,9 @@
+import sys
+from pathlib import Path
+
+# Consente a Python di trovare i moduli aipython situati nella cartella principale
+sys.path.append(str(Path(__file__).resolve().parent.parent))
+
 from cspConsistency import Search_with_AC_from_CSP
 from cspProblem import CSP, Constraint
 from searchGeneric import Searcher

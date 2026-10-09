@@ -1,3 +1,9 @@
+import sys
+from pathlib import Path
+
+# Permette di trovare i moduli aipython dalla cartella superiore
+sys.path.append(str(Path(__file__).resolve().parent.parent))
+
 from searchMPP import SearcherMPP
 from searchProblem import Arc, Search_problem_from_explicit_graph
 
